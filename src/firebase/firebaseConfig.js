@@ -8,18 +8,25 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 // Your web app's Firebase configuration
 
-const apiKeyFirebase = import.meta.env.VITE_FIREBASE_API_KEY;
+// const apiKeyFirebase = import.meta.env.VITE_FIREBASE_API_KEY;
 
+// const firebaseConfig = {
+
+//   apiKey: apiKeyFirebase,
+//   authDomain: "artgallery-3621a.firebaseapp.com",
+//   projectId: "artgallery-3621a",
+//   storageBucket: "artgallery-3621a.firebasestorage.app",
+//   messagingSenderId: "1042245134229",
+//   appId: "1:1042245134229:web:12e0f4784367c24f95389c"
+// };
 const firebaseConfig = {
-
-  apiKey: apiKeyFirebase,
+  apiKey: "AIzaSyDNt0puxzEuYtFUvAyyfdkXdnF4__4t1c8",
   authDomain: "artgallery-3621a.firebaseapp.com",
   projectId: "artgallery-3621a",
   storageBucket: "artgallery-3621a.firebasestorage.app",
   messagingSenderId: "1042245134229",
   appId: "1:1042245134229:web:12e0f4784367c24f95389c"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
