@@ -1,0 +1,96 @@
+ul {
+  list-style: none;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+.gallery {
+  column-count: 4; /* 4 колонки */
+  column-gap: 15px; /* Проміжок між колонками */
+}
+
+.gallery-item {
+  display: inline-block; /* Дозволяє елементам не ламати потік колонок */
+  width: 100%;
+  margin-bottom: 15px; /* Відступ між елементами */
+}
+
+.gallery-item img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  border-radius: 15px;
+}
+.searchError {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: calc(50% - 10px);
+  color: #c74778;
+  font-size: 3em;
+}
+@media only screen and (max-width: 1023px) {
+  .gallery {
+    column-count: 3; /* 3 колонки для середніх екранів */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    column-count: 2; /* 2 колонки на мобільних */
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .gallery {
+    column-count: 1; /* 1 колонка для дуже малих екранів */
+  }
+}
+
+/* пагинація */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #c74778;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+  font-weight: 700;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #c5809b;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: #c74778;
+  color: #fff;
+  border-color: #c74778;
+}
+
+.pagination .disabled a {
+  opacity: 0.5;
+  pointer-events: none;
+}

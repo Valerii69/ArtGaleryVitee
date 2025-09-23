@@ -1,0 +1,288 @@
+.bar-icon {
+  font-size: 150%;
+  text-align: center;
+  /* margin: 1vw; */
+}
+
+.bar-icon:hover {
+  transform: scale(1.2);
+  text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  transition: 0.5s ease-out;
+}
+
+/* card */
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  /* height: 80vh; */
+  width: min(80vw, 135vh);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+  position: relative; 
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    /* height: 90vh; */
+  }
+}
+.content-container {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  z-index: 20;
+  /* align-items: center */
+  position: relative;
+}
+.aboutContainer-text {
+  height: 70vh;
+  width: 100%;
+  padding: 5vw;
+  display: flex;
+
+   align-items: flex-start;
+  justify-content: flex-start;
+ 
+  z-index: 20;
+
+  color: #4756c7;
+    /* font-family: "Playfair Display", serif; */
+    font-size: 40px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1020px) {
+  .content-container {
+    height: 80vh;
+  }
+  .aboutContainer-text{
+     font-weight: 200;
+       font-size: 1em;    
+       align-items: start;
+       font-size: 40px;
+  }
+}
+
+/*  */
+.brush-container {
+  /* width: 100%;
+  height: 100%; */
+  width: 75vw;
+  height: 55vh;
+  /* overflow: hidden; */
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+}
+
+.brush-container .brush-intro {
+  opacity: 0;
+}
+.brush-container .brush-project,
+.brush-container .brush-about {
+  opacity: 0.8;
+  z-index: 1;
+}
+.brush-container .brush-read-more {
+  opacity: 0.4;
+  z-index: 200;
+}
+
+#first,
+#second,
+#third {
+  position: absolute;
+  display: inline-block;
+}
+
+.flower-text-wrapper {
+  display: flex;
+  align-items: center; /* Вирівнює квітку і текст по центру */
+  justify-content: center;
+  gap: 20px; /* Відстань між квіткою і текстом */
+}
+
+.text-container {
+  display: flex;
+  font-size: 50px;
+  width: 50%;
+  justify-content: left;
+  max-width: 400px; /* Адаптуйте під ваш макет */
+}
+@media only screen and (max-width: 1200px) {
+  .text-container {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .text-container {
+    font-size: 25px;
+  }
+}
+
+
+.text-wrapper {
+  display: flex;
+  align-items: center; /* Вирівнює квітку і текст по центру */
+  justify-content: center;
+  color: #c74778;
+}
+@media only screen and (max-width: 500px) {
+  #first,
+  #second,
+  #third {
+    height: auto;
+  }
+}
+
+img#first.brush-intro {
+  transform: translate(-25%, -15%) scale(0);
+  opacity: 0;
+}
+
+img#second.brush-intro {
+  transform: translate(-5%, -45%) scale(0);
+  opacity: 0;
+}
+
+img#third.brush-intro {
+  transform: translate(-55%, -35%) scale(0);
+  opacity: 0;
+}
+
+@media only screen and (min-width: 501px) {
+  img#first.brush-project {
+    transform: translate(-35%, -15%) scale(0.7);
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#first.brush-project {
+    transform: translate(-45%, 35%) scale(0.8);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img#second.brush-project {
+    transform: translate(-55%, -10%) scale(0.3);
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#second.brush-project {
+    transform: translate(-55%, 55%) scale(0.5);
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img#third.brush-project {
+    transform: translate(-50%, -25%) scale(0.45);
+    opacity: 0.6;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#third.brush-project {
+    transform: translate(-30%, -5%) scale(0.7);
+    opacity: 0.6;
+  }
+}
+/* 
+@media only screen and (min-width: 501px) {
+  img#first.brush-about {
+    transform: translate(-35%, -15%) scale(0.6);
+    opacity: 1;
+  }
+} */
+@media only screen and (max-width: 500px) {
+  img#first.brush-about {
+    transform: translate(-45%, 35%) scale(1);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img#second.brush-about {
+    transform: translate(-45%, 1%) scale(0.5);
+    opacity: 0.7;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#second.brush-about {
+    transform: translate(-65%, 45%) scale(0.4);
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img#third.brush-about {
+    transform: translate(-40%, -30%) scale(0.35);
+    opacity: 0.6;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#third.brush-about {
+    transform: translate(-30%, -10%) scale(0.4);
+    opacity: 0.6;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  img#first.brush-read-more {
+    transform: translate(-15%, 0%) scale(1.1);
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#first.brush-read-more {
+    transform: translate(-15%, 20%) scale(1.5);
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 501px) {
+  img#second.brush-read-more {
+    transform: translate(-80%, 25%) scale(0.6);
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#second.brush-read-more {
+    transform: translate(-80%, 85%) scale(1.2);
+    opacity: 0.5;
+  }
+}
+@media only screen and (min-width: 501px) {
+  img#third.brush-read-more {
+    transform: translate(-10%, -40%) scale(0.8);
+    opacity: 0.4;
+  }
+}
+@media only screen and (max-width: 500px) {
+  img#third.brush-read-more {
+    transform: translate(-10%, -40%) scale(0.8);
+    opacity: 0.4;
+  }
+}
+/* .change-shape  */
+
+.brush-container img {
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: transform 0.4s ease;
+  -moz-transition: transform 0.4s ease;
+  -ms-transition: transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+}

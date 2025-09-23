@@ -1,0 +1,35 @@
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 80vh;
+  width: min(80vw, 135vh);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  /* flex-direction: column; */
+   flex-direction: row;
+  justify-content:  space-between;
+  align-items: stretch;
+  overflow: hidden;
+  /* position: absolute; */
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    /* height: 90vh; */
+  }
+}
+.content-container {
+  height: 70vh;
+  display: flex;
+   /* flex-direction: row; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    /* height: 80vh; */
+  }
+}

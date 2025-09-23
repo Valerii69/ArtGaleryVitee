@@ -1,0 +1,120 @@
+.buttonSticky {
+     display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 5rem;
+    right: 1.5rem;
+    z-index: 90;
+    gap: 1rem;
+    align-items: center
+}
+.contactWidgetButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 105%;
+    right: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+ .active .contactWidgetButtons {
+
+    transform: translateY(0%);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.contactWidgetButtons a {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 10px auto 0;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3); */
+    transition: opacity .2s ease-in-out, transform .15s ease-in-out;
+}
+
+.contactWidgetButtons a:nth-child(1) { background-color: #049be5; transition-delay: .3s; }
+.contactWidgetButtons a:nth-child(2) { background-color: #7360f2; transition-delay: .3s; }
+.contactWidgetButtons a:nth-child(3) { background-color: #25d366; transition-delay: .3s; }
+
+a, button {
+    cursor: pointer;
+}
+
+.buttonStickyChat {
+    background-color: #c74778;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 12px 16px -4px rgba(0, 0, 0, .08); */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: .1s;
+    margin-top: 10px;
+}
+
+.buttonSticky a:hover,
+.buttonSticky button :hover{
+    transform: scale(1.2);
+    /* text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4); */
+    transition: 0.5s ease-out;
+
+}
+
+
+.contactWidgetButtons a img {
+    width: 50%;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.returnScroll{
+    
+     /* position: absolute;
+      top: 0;
+    left: 0; */
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+    margin: 0.5em;
+  
+    background: rgba(255, 255, 255, 0.80);
+    /* box-shadow: 2px 2px 5px rgba(233, 234, 237, 0.5); */
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    color: #c64675;
+    z-index: 900;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid #c74778;
+    font-size: 1em;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+  }
+
+  /* .returnScroll :hover{
+    background: rgba(255, 255, 255, 1);
+  } */
+  .return-icon {
+    rotate:  z 90deg;
+  }

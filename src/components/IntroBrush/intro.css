@@ -1,0 +1,89 @@
+.intro-cont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  /* width: 100%; */
+  height: 100%;
+}
+
+@media only screen and (min-width: 651px) {
+  .intro-cont {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .intro-cont {
+    flex-direction: column;
+    width: 70%;
+  }
+}
+
+.restart-anim-cont {
+  background-color: rgba(255, 255, 255, 0.4);
+   position: absolute;
+    top: 0;
+  right: 0;
+  
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+ 
+  margin: 0.5em;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  color: #c64675;
+  z-index: 900;
+  width: 35px;
+  height: 35px;
+  border: 1.25px solid #c74778;
+  font-size: 1em;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+.return-anim-cont{
+  background-color: rgba(255, 255, 255, 0.4);
+   position: absolute;
+    top: 0;
+  left: 0;
+  
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+ 
+  margin: 0.5em;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  color: #c64675;
+  z-index: 900;
+  width: 35px;
+  height: 35px;
+  border: 1.25px solid #c74778;
+  font-size: 1em;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}

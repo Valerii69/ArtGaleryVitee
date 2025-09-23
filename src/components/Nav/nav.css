@@ -1,0 +1,62 @@
+.icons-container {
+  display: flex;
+  height: 100%;
+  width: 9vw;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin: 0 1vw;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-image {
+  height: 2em;
+  margin-right: 1rem;
+  transition: transform 0.5s ease-out;
+}
+.logo-image:hover {
+  text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  transform: scale(1.2); /* Легке збільшення при наведенні */
+}
+
+.icon {
+  text-align: center;
+  font-size: 2em;
+  background: inherit;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  text-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  transition: 0.5s ease-out;
+}
+
+.bar-icon {
+  margin: 0.5rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container:focus-within {
+  border: 1.5px solid #c74778;
+  box-shadow: 2px 2px 5px rgba(51, 61, 71, 0.4);
+  transition: 0.2s ease-out;
+}
+
+.cards-counter {
+  font-size: 1em;
+}
