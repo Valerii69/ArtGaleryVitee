@@ -7,13 +7,24 @@ import "./App.css";
 
 export default function App() {
   return (
-    <Router basename="/ArtGaleryVite">
+/*     <Router basename="/ArtGaleryVite">
       <Routes>
         <Route path="/" element={<ArtGallery />} />
         <Route path="/brush" element={<BrushContainer />} />
         <Route path="/about" element={<About />} />
         <Route path="/admin" element={<Admin />} />
       </Routes>
-    </Router>
+    </Router> */
+
+    //локально запускать http://localhost:5173/ArtGaleryVite/
+    
+<Router basename="/ArtGaleryVite">
+  <Routes>
+    <Route path="/" element={<ArtGallery />} />
+    <Route path="/brush" element={<BrushContainer />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/admin" element={<Admin />} />
+  </Routes>
+</Router>
   );
 }
